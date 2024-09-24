@@ -2,6 +2,8 @@
   &__list {
     display: flex;
     column-gap: 1.8rem;
+    align-items: center;
+    position: relative;
   }
 
   &__link {

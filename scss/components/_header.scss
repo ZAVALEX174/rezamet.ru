@@ -43,6 +43,7 @@
     position: relative;
 
     &::before {
+      pointer-events: none;
       position: absolute;
       content: '';
       top: -1rem;
@@ -54,7 +55,7 @@
       height: 4.3rem;
       clip-path: polygon(0 0, 94% 0, 100% 100%, 6% 100%);
       background-color: rgba(248, 67, 56, 0.76);
-      z-index: 5;
+      z-index: 0;
     }
   }
 

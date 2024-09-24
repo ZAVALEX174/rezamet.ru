@@ -172,6 +172,7 @@ img {
   position: relative;
 }
 .header__top::before {
+  pointer-events: none;
   position: absolute;
   content: "";
   top: -1rem;
@@ -183,7 +184,7 @@ img {
   height: 4.3rem;
   clip-path: polygon(0 0, 94% 0, 100% 100%, 6% 100%);
   background-color: rgba(248, 67, 56, 0.76);
-  z-index: 5;
+  z-index: 0;
 }
 .header__sosial {
   margin-left: auto;
@@ -203,6 +204,8 @@ img {
 .social__list {
   display: flex;
   column-gap: 1.8rem;
+  align-items: center;
+  position: relative;
 }
 .social__link {
   transition: all 0.3s linear;
