@@ -157,6 +157,11 @@ img {
   backdrop-filter: blur(4px);
   z-index: 0;
 }
+@media screen and (max-width: 1440px) {
+  .header::before {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 .header__container {
   position: relative;
   width: 100%;
@@ -203,9 +208,20 @@ img {
   background-color: rgba(255, 185, 0, 0.66);
   z-index: 5;
 }
+@media screen and (max-width: 1280px) {
+  .header__top::after {
+    right: -39rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+  }
+}
 .header__sosial {
   margin-left: auto;
   margin-right: 11.2rem;
+}
+@media screen and (max-width: 1280px) {
+  .header__sosial {
+    margin-right: 7.2rem;
+  }
 }
 .header__contacts {
   text-align: right;
