@@ -1,0 +1,39 @@
+// Fonts
+$font-family-base: 'OfficinaSerifBookC', sans-serif;
+$font-family-base02: 'Gilroy', sans-serif;
+$font-family-title: 'Bebas Neue', sans-serif;
+$font-size-base: 1.6rem;
+$font-weight-base: 400;
+$font-path: '../fonts';
+
+// Color
+$color-granat-title: #f60030;
+$color-granat-subtitle: #904852;
+$color-granat-call: #de2a43;
+$color-granat-call-order: #eed2d5;
+$color-granat-icon: #fad0d6;
+$color-granat-contact: #cf162b;
+$color-main: #000000;
+$color-second: #222222;
+$color-white: #ffffff;
+$color-yellow: #fff383;
+$color-orange: #debd55;
+$color-pink: #cfa0a9;
+$color-light-grey: #e1e1e1;
+
+// Responsive width
+$desktop: 'screen and (max-width: 1680px)';
+$laptop: 'screen and (max-width: 1440px)';
+$notebook: 'screen and (max-width: 1366px)';
+$notebook_s: 'screen and (max-width: 1280px)';
+$laptop_s: 'screen and (max-width: 1024px)';
+$tablet: 'screen and (max-width: 999px)';
+$tablet-mini: 'screen and (max-width: 767px)';
+$phone: 'screen and (max-width: 500px)';
+$phone_s: 'screen and (max-width: 375px)';
+$phone-mini: 'screen and (max-width: 320px)';
+
+$notebook-height: 'screen and (max-height: 800px)';
+$desktop_x: 'screen and (max-width: 1780px)';
+
+//'Arial Narrow'
