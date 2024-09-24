@@ -142,6 +142,7 @@ img {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
 }
 .header::before {
+  pointer-events: none;
   position: absolute;
   content: "";
   top: 0;
@@ -154,6 +155,21 @@ img {
   background-color: rgba(15, 20, 28, 0.5);
   backdrop-filter: blur(4px);
   z-index: 0;
+}
+.header::after {
+  pointer-events: none;
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+  max-width: 50rem;
+  width: 100%;
+  height: 7.5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%);
+  background-color: rgba(255, 185, 0, 0.66);
+  z-index: 5;
 }
 .header__container {
   position: relative;
@@ -193,6 +209,7 @@ img {
 .header__contacts {
   text-align: right;
   position: relative;
+  z-index: 10;
 }
 .header__donw {
   width: 100%;
