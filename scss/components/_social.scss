@@ -1,0 +1,15 @@
+.social {
+  &__list {
+    display: flex;
+    column-gap: 1.8rem;
+  }
+
+  &__link {
+    transition: all 0.3s linear;
+  }
+
+  &__link:hover svg path {
+    fill-opacity: 1;
+    transition: all 0.3s linear;
+  }
+}

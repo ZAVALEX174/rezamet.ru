@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url($font-path + '/BebasNeue/BebasNeueBold.woff') format('woff'),
+  url($font-path + '/BebasNeue/BebasNeueBold.eot') format('eot'),
+  url($font-path + '/BebasNeue/BebasNeueBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url($font-path + '/BebasNeue/BebasNeueRegular.woff') format('woff'),
+  url($font-path + '/BebasNeue/BebasNeueRegular.eot') format('eot'),
+  url($font-path + '/BebasNeue/BebasNeueRegular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

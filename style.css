@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.eot") format("eot"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueRegular.eot") format("eot"), url("../fonts/BebasNeue/BebasNeueRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("../fonts/gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/gilroy/Gilroy-Regular.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("../fonts/gilroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gilroy/Gilroy-Medium.woff") format("woff"), url("../fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy Light"), local("Gilroy-Light"), url("../fonts/gilroy/Gilroy-Light.woff") format("woff"), url("../fonts/gilroy/Gilroy-Light.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -45,6 +81,7 @@ body {
   font-weight: 400;
   background-color: #ffffff;
   min-height: 100vh;
+  font-family: "Bebas Neue", sans-serif, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -96,4 +133,62 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.header {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: antiquewhite;
+}
+.header__container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__sosial {
+  margin-left: auto;
+  margin-right: 11.2rem;
+}
+.header__contacts {
+  text-align: right;
+}
+.header__donw {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__list {
+  display: flex;
+  column-gap: 1.8rem;
+}
+.social__link {
+  transition: all 0.3s linear;
+}
+.social__link:hover svg path {
+  fill-opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.contacts__number-link {
+  display: inline-flex;
+  align-items: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+.contacts__number-link svg {
+  margin-right: 1rem;
 }/*# sourceMappingURL=style.css.map */
