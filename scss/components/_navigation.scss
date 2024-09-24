@@ -1,0 +1,22 @@
+.navigation {
+  width: 100%;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: $font-family-title;
+    transition: all 0.3s linear;
+
+    &:hover {
+      transition: all 0.3s linear;
+      color: #ffb033;
+    }
+  }
+}

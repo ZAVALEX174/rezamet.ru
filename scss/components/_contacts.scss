@@ -1,18 +1,26 @@
 .contacts {
   &__number {
+    &-link {
+      display: inline-flex;
+      align-items: center;
+      color: #000000;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 30px;
+      text-align: left;
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
   }
 
-  &__number-link {
-    display: inline-flex;
-    align-items: center;
-    color: #000000;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: left;
-
-    svg {
-      margin-right: 1rem;
+  &__callback {
+    &-link {
+      font-family: $font-family-title;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #f6f6f6;
     }
   }
 }
