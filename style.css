@@ -141,6 +141,7 @@ img {
   width: 100%;
   padding: 0.8rem 0 2.7rem;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  z-index: 50;
 }
 @media screen and (max-width: 999px) {
   .header {
@@ -433,4 +434,80 @@ img {
 }
 .burger-menu__sosial {
   margin-bottom: 2.5rem;
+}
+
+.hero-slider {
+  width: 100%;
+  margin-top: -13rem;
+  position: relative;
+}
+
+.hero__pagination-box {
+  position: relative;
+  z-index: 200;
+  max-width: 1520px;
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 25px;
+  margin: 0 auto;
+  top: -70px;
+  right: 0;
+  z-index: 5;
+}
+@media screen and (max-width: 500px) {
+  .hero__pagination-box {
+    top: -45px;
+  }
+}
+.hero__pagination-box .swiper-pagination-horizontal {
+  width: 370px;
+  left: auto;
+  right: 0;
+}
+@media screen and (max-width: 500px) {
+  .hero__pagination-box .swiper-pagination-horizontal {
+    width: 290px;
+    right: auto;
+  }
+}
+.hero__pagination-box .hero__swiper-pagination {
+  width: 370px;
+  height: var(--swiper-pagination-progressbar-size, 4px);
+  right: 44px;
+  top: 9px;
+  border-radius: 10px;
+  background: rgba(229, 238, 245, 0.5);
+}
+@media screen and (max-width: 500px) {
+  .hero__pagination-box .hero__swiper-pagination {
+    width: 290px;
+  }
+}
+.hero__pagination-box .hero__swiper-pagination .swiper-pagination-progressbar-fill {
+  border-radius: 10px;
+  background: #df2c46;
+}
+.hero__pagination-box .hero__swiper-pagination::after {
+  position: absolute;
+  content: "06";
+  color: #df2c46;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  top: -10px;
+  right: -33px;
+}
+.hero__pagination-box .hero__swiper-pagination::before {
+  position: absolute;
+  content: "01";
+  color: #df2c46;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  top: -10px;
+  left: -33px;
 }/*# sourceMappingURL=style.css.map */

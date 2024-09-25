@@ -8,3 +8,5 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   burgerMenu.classList.remove('burger-menu__open');
 })
+
+
