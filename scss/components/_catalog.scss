@@ -1,0 +1,23 @@
+.catalog {
+  width: 100%;
+
+  // &__container {
+
+  // }
+
+  &__title {
+    margin-bottom: 6.2rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: '';
+    // display: block;
+    // width: 6.8rem;
+    // height: 1.8rem;
+    top: 100%;
+    // transform: translateY(100%);
+    left: 0;
+    background: url('../../images/catalog/rect.svg') no-repeat;
+  }
+}

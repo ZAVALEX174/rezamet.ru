@@ -135,6 +135,13 @@ img {
   object-fit: cover;
 }
 
+.title,
+h2 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: #222;
+}
+
 .header {
   position: relative;
   overflow: hidden;
@@ -441,6 +448,7 @@ img {
   width: 100%;
   margin-top: -13rem;
   position: relative;
+  margin-bottom: 7.7rem;
 }
 .hero-slider__container {
   position: relative;
@@ -476,7 +484,7 @@ img {
 .hero__pagination-box {
   position: relative;
   z-index: 200;
-  max-width: 1520px;
+  max-width: 1560px;
   padding-right: 10px;
   padding-left: 10px;
   height: 25px;
