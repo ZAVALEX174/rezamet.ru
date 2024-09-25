@@ -101,4 +101,15 @@ h2 {
   font-weight: 700;
   font-size: 4.5rem;
   color: #222;
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  content: '';
+  width: 6.8rem;
+  height: 1.8rem;
+  bottom: -20px;
+  left: -11px;
+  background: url('../../images/catalog/rect.svg') no-repeat;
 }
