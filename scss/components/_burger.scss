@@ -1,0 +1,8 @@
+.burger-menu {
+  display: flex;
+  &__btn-open {
+    padding: 0 0.4rem;
+    display: inline-flex;
+    align-self: center;
+  }
+}
