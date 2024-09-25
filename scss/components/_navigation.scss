@@ -19,4 +19,12 @@
       color: #ffb033;
     }
   }
+
+  &__list_burger {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }

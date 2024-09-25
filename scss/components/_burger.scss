@@ -1,8 +1,51 @@
 .burger-menu {
   display: flex;
+  position: fixed;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 3.3rem 3.6rem;
+  backdrop-filter: blur(4px);
+  background: rgba(15, 20, 28, 0.95);
+  width: 100%;
+  left: -100%;
+  transition: all 0.3s linear;
+  z-index: 100;
+
+  &__open {
+    transition: all 0.3s linear;
+    left: 0;
+  }
+
   &__btn-open {
+    display: none;
     padding: 0 0.4rem;
-    display: inline-flex;
     align-self: center;
+
+    @media #{$tablet} {
+      display: inline-flex;
+    }
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 1.7rem;
+    right: 2.2rem;
+  }
+
+  &__nav {
+    width: 100%;
+    margin-bottom: 6.2rem;
+  }
+
+  &__navigation {
+    width: 100%;
+  }
+
+  &__contacts {
+    width: 100%;
+  }
+
+  &__sosial {
+    margin-bottom: 2.5rem;
   }
 }
