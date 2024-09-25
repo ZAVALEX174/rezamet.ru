@@ -325,7 +325,12 @@ img {
   }
 }
 .contacts__number-link svg {
-  margin-right: 7rem;
+  margin-right: 1rem;
+}
+@media screen and (max-width: 999px) {
+  .contacts__number-link svg {
+    margin-right: 7rem;
+  }
 }
 .contacts__callback-link {
   font-family: "Gilroy", sans-serif;

@@ -16,7 +16,11 @@
       }
 
       svg {
-        margin-right: 7rem;
+        margin-right: 1rem;
+
+        @media #{$tablet} {
+          margin-right: 7rem;
+        }
       }
     }
   }
