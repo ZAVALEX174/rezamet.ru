@@ -159,7 +159,7 @@ img {
   max-width: 177rem;
   width: 100%;
   clip-path: polygon(0% 0%, 92% 0.2%, 100% 100%, 0% 100%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(15, 20, 28, 0.5);
   backdrop-filter: blur(4px);
   z-index: 0;
 }
@@ -437,9 +437,40 @@ img {
 }
 
 .hero-slider {
+  position: relative;
   width: 100%;
   margin-top: -13rem;
   position: relative;
+}
+.hero-slider__container {
+  position: relative;
+  margin-bottom: 7rem;
+  max-width: 66rem;
+  width: 100%;
+  text-align: left;
+  min-height: 100%;
+}
+.hero-slider__title {
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 0.75;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
+}
+.hero-slider__title b {
+  font-size: 8rem;
+  color: #ffb033;
+}
+.hero-slider__desc {
+  width: 100%;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.22222;
+  color: #fff;
+  text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
+  margin-bottom: 3rem;
 }
 
 .hero__pagination-box {
@@ -510,4 +541,50 @@ img {
   line-height: normal;
   top: -10px;
   left: -33px;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(180deg, #0f141c 0%, rgba(0, 0, 0, 0) 100%);
+}
+.swiper-slide::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0 5.5rem 0 3.3rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "Gilroy", sans-serif;
+  border-radius: 2.8rem;
+  background: linear-gradient(180deg, #e31e24 0%, #7d1114 100%);
+  transition: all 0.3s linear;
+}
+.btn::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  background: url(../../images/hero/arr_right.svg) no-repeat center;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.btn:hover {
+  background: linear-gradient(180deg, #e31e24 100%, #7d1114 0%);
+  transition: all 0.3s linear;
 }/*# sourceMappingURL=style.css.map */

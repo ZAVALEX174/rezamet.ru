@@ -1,0 +1,32 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 4.5rem;
+  padding: 0 5.5rem 0 3.3rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: $font-family-title;
+  border-radius: 2.8rem;
+  background: linear-gradient(180deg, #e31e24 0%, #7d1114 100%);
+  transition: all 0.3s linear;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    background: url(../../images/hero/arr_right.svg) no-repeat center;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  &:hover {
+    background: linear-gradient(180deg, #e31e24 100%, #7d1114 0%);
+    transition: all 0.3s linear;
+  }
+}
