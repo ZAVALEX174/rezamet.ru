@@ -2,6 +2,10 @@
   width: 100%;
   margin-bottom: 14.1rem;
 
+  @media #{$phone} {
+    margin-bottom: 8rem;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;

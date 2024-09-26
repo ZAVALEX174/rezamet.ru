@@ -661,6 +661,11 @@ h2 {
   width: 100%;
   margin-bottom: 14.1rem;
 }
+@media screen and (max-width: 500px) {
+  .catalog {
+    margin-bottom: 8rem;
+  }
+}
 .catalog__container {
   display: flex;
   flex-direction: column;
