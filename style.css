@@ -477,9 +477,21 @@ h2 {
   margin-bottom: 1rem;
   text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
 }
+@media screen and (max-width: 500px) {
+  .hero-slider__title {
+    font-size: 4rem;
+    line-height: 1;
+  }
+}
 .hero-slider__title b {
   font-size: 8rem;
   color: #ffb033;
+}
+@media screen and (max-width: 500px) {
+  .hero-slider__title b {
+    font-size: 4rem;
+    line-height: 1;
+  }
 }
 .hero-slider__desc {
   width: 100%;
@@ -490,6 +502,13 @@ h2 {
   color: #fff;
   text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .hero-slider__desc {
+    font-size: 14px;
+    line-height: 1.14286;
+    text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
+  }
 }
 
 .hero__pagination-box {
@@ -504,9 +523,17 @@ h2 {
   right: 0;
   z-index: 5;
 }
+@media screen and (max-width: 767px) {
+  .hero__pagination-box {
+    top: -25px;
+  }
+}
 @media screen and (max-width: 500px) {
   .hero__pagination-box {
     top: -45px;
+    max-width: 348px;
+    margin-right: 0;
+    height: 21px;
   }
 }
 .hero__pagination-box .swiper-pagination-horizontal {
@@ -592,6 +619,15 @@ h2 {
   border-radius: 2.8rem;
   background: linear-gradient(180deg, #e31e24 0%, #7d1114 100%);
   transition: all 0.3s linear;
+}
+@media screen and (max-width: 500px) {
+  .btn {
+    font-weight: 500;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 5.2rem 0 2.4rem;
+  }
 }
 .btn::after {
   position: absolute;

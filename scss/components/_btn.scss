@@ -13,6 +13,14 @@
   background: linear-gradient(180deg, #e31e24 0%, #7d1114 100%);
   transition: all 0.3s linear;
 
+  @media #{$phone} {
+    font-weight: 500;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 5.2rem 0 2.4rem;
+  }
+
   &::after {
     position: absolute;
     content: '';

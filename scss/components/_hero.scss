@@ -22,9 +22,19 @@
     margin-bottom: 1rem;
     text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
 
+    @media #{$phone} {
+      font-size: 4rem;
+      line-height: 1;
+    }
+
     b {
       font-size: 8rem;
       color: #ffb033;
+
+      @media #{$phone} {
+        font-size: 4rem;
+        line-height: 1;
+      }
     }
   }
 
@@ -37,6 +47,12 @@
     color: #fff;
     text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
     margin-bottom: 3rem;
+
+    @media #{$phone} {
+      font-size: 14px;
+      line-height: 1.14286;
+      text-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.9);
+    }
   }
 }
 
@@ -52,8 +68,15 @@
   right: 0;
   z-index: 5;
 
+  @media #{$tablet-mini} {
+    top: -25px;
+  }
+
   @media #{$phone} {
     top: -45px;
+    max-width: 348px;
+    margin-right: 0;
+    height: 21px;
   }
 
   .swiper-pagination-horizontal {
