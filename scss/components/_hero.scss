@@ -5,6 +5,10 @@
   position: relative;
   margin-bottom: 7.7rem;
 
+  @media #{$phone} {
+    margin-bottom: 3.4rem;
+  }
+
   &__container {
     position: relative;
     margin-bottom: 7rem;
@@ -112,7 +116,7 @@
     position: absolute;
     content: '06';
     color: #df2c46;
-    font-family: $font-family-base;
+    font-family: $font-family-title;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -125,7 +129,7 @@
     position: absolute;
     content: '01';
     color: #df2c46;
-    font-family: $font-family-base;
+    font-family: $font-family-title;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
