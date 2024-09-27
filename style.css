@@ -811,6 +811,11 @@ h2 {
   height: auto;
   margin-bottom: 17.4rem;
 }
+@media screen and (max-width: 1280px) {
+  .about {
+    margin-bottom: 5rem;
+  }
+}
 .about__title {
   margin-bottom: 6.2rem;
   position: relative;
@@ -833,6 +838,15 @@ h2 {
   display: inline-flex;
   margin-right: 5.6rem;
 }
+@media screen and (max-width: 1280px) {
+  .about__desc {
+    order: 3;
+    display: block;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+}
 .about__desc-text {
   font-weight: 400;
   font-size: 1.6rem;
@@ -851,7 +865,24 @@ h2 {
   width: 100%;
   height: 33.7rem;
   position: relative;
-  margin-top: -10px;
+  margin-top: -99px;
+  margin-bottom: 77px;
+}
+@media screen and (max-width: 1280px) {
+  .about__demo {
+    margin: -100px auto 25px;
+    order: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__demo {
+    margin-top: -70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__demo {
+    margin-top: -85px;
+  }
 }
 .about__demo::after {
   position: absolute;
@@ -874,6 +905,7 @@ h2 {
   border: 0.1px solid rgba(218, 223, 228, 0.5);
   border-radius: 13rem 0;
   overflow: hidden;
+  background-color: #f3f7f9;
 }
 .about__demo img {
   width: 100%;
@@ -886,7 +918,7 @@ h2 {
   left: 50%;
   position: absolute;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1280px) {
   .about__btn {
     display: flex;
     position: relative;
@@ -901,10 +933,29 @@ h2 {
   display: flex;
   width: 100%;
 }
+@media screen and (max-width: 1280px) {
+  .about__cart {
+    order: 2;
+    margin-bottom: 2rem;
+  }
+}
 .about__cart-list {
   display: flex;
   column-gap: 2.7rem;
   width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .about__cart-list {
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__cart-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 .about__cart-item {
   width: 25%;
@@ -914,9 +965,28 @@ h2 {
   align-items: flex-end;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .about__cart-item {
+    width: 100%;
+    height: 125px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__cart-item {
+    padding-bottom: 0.4rem;
+  }
+}
 .about__cart-text {
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 1;
   color: #000;
-}/*# sourceMappingURL=style.css.map */
+}
+@media screen and (max-width: 500px) {
+  .about__cart-text {
+    font-size: 18px;
+    line-height: 0.8;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

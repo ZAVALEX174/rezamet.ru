@@ -3,6 +3,10 @@
   height: auto;
   margin-bottom: 17.4rem;
 
+  @media #{$notebook_s} {
+    margin-bottom: 5rem;
+  }
+
   &__title {
     margin-bottom: 6.2rem;
     position: relative;
@@ -28,6 +32,14 @@
     display: inline-flex;
     margin-right: 5.6rem;
 
+    @media #{$notebook_s} {
+     order: 3;
+      display: block;
+      max-width: 100%;
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
+
     &-text {
       font-weight: 400;
       font-size: 1.6rem;
@@ -49,7 +61,21 @@
     width: 100%;
     height: 33.7rem;
     position: relative;
-    margin-top: -10px;
+    margin-top: -99px;
+    margin-bottom: 77px;
+
+    @media #{$notebook_s} {
+      margin: -100px auto 25px;
+      order: 1;
+    }
+
+    @media #{$tablet-mini} {
+      margin-top: -70px;
+    }
+
+    @media #{$phone} {
+      margin-top: -85px;
+    }
 
     &::after {
       position: absolute;
@@ -72,6 +98,7 @@
       border: 0.1px solid rgba(218, 223, 228, 0.5);
       border-radius: 13rem 0;
       overflow: hidden;
+      background-color: #f3f7f9;
     }
 
     img {
@@ -87,7 +114,7 @@
     left: 50%;
     position: absolute;
 
-    @media #{$laptop} {
+    @media #{$notebook_s} {
       display: flex;
       position: relative;
       top: 0;
@@ -102,10 +129,26 @@
     display: flex;
     width: 100%;
 
+    @media #{$notebook_s} {
+     order: 2;
+      margin-bottom: 2rem;
+    }
+
     &-list {
       display: flex;
       column-gap: 2.7rem;
       width: 100%;
+
+      @media #{$laptop_s} {
+        column-gap: 1rem;
+        row-gap: 1rem;
+      }
+
+      @media #{$tablet-mini} {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
     }
 
     &-item {
@@ -115,6 +158,16 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
+
+      @media #{$tablet-mini} {
+        //width: 50%;
+        width: 100%;
+        height: 125px !important;
+      }
+
+      @media #{$phone} {
+        padding-bottom: 0.4rem;
+      }
     }
 
     &-text {
@@ -122,6 +175,11 @@
       font-size: 2.2rem;
       line-height: 1;
       color: #000;
+
+      @media #{$phone} {
+        font-size: 18px;
+        line-height: 0.8;
+      }
     }
   }
 }
