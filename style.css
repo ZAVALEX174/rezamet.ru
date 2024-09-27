@@ -689,6 +689,9 @@ h2 {
   padding: 0.3rem 3.7rem 0 3.3rem;
   transition: all 0.3s linear;
 }
+.catalog__btn:hover {
+  color: #ffffff;
+}
 @media screen and (max-width: 500px) {
   .catalog__btn {
     order: 3;
@@ -805,22 +808,30 @@ h2 {
 
 .about {
   width: 100%;
+  height: auto;
   margin-bottom: 17.4rem;
 }
 .about__title {
   margin-bottom: 6.2rem;
+  position: relative;
+  z-index: 30;
+}
+.about__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .about__box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  display: grid;
-  grid-template-columns: 76rem 60rem;
-  grid-template-rows: 34rem 14.6rem;
-  grid-template-areas: "desc demo" "cart cart";
-  row-gap: 4.4rem;
 }
 .about__desc {
-  grid-area: desc;
   max-width: 74rem;
+  width: 100%;
+  display: inline-flex;
+  margin-right: 5.6rem;
 }
 .about__desc-text {
   font-weight: 400;
@@ -835,10 +846,27 @@ h2 {
   color: #e31e24;
 }
 .about__demo {
-  grid-area: demo;
-  max-width: 59.6rem;
+  display: inline-flex;
+  max-width: 59rem;
+  width: 100%;
   height: 33.7rem;
-  margin-top: -10rem;
+  position: relative;
+  margin-top: -10px;
+}
+.about__demo::after {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 53px;
+  right: -20px;
+  top: -25px;
+  display: block;
+  background: url("../../images/catalog/rect.svg") no-repeat center/cover;
+}
+@media screen and (max-width: 1440px) {
+  .about__demo::after {
+    content: none;
+  }
 }
 .about__demo-video {
   width: 100%;
@@ -853,17 +881,33 @@ h2 {
   display: block;
   object-fit: contain;
 }
+.about__btn {
+  top: 21rem;
+  left: 50%;
+  position: absolute;
+}
+@media screen and (max-width: 1440px) {
+  .about__btn {
+    display: flex;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    order: 4;
+  }
+}
 .about__cart {
-  grid-area: cart;
+  display: flex;
   width: 100%;
 }
 .about__cart-list {
+  display: flex;
   column-gap: 2.7rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 14.6rem;
+  width: 100%;
 }
 .about__cart-item {
+  width: 25%;
   border-radius: 20px;
   padding-bottom: 2.8rem;
   display: flex;
@@ -875,9 +919,4 @@ h2 {
   font-size: 2.2rem;
   line-height: 1;
   color: #000;
-}
-.about__btn {
-  top: 21rem;
-  left: 50%;
-  position: absolute;
 }/*# sourceMappingURL=style.css.map */
