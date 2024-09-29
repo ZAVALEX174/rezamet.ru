@@ -996,6 +996,11 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 500px) {
+  .consultation {
+    margin-bottom: 10.8rem;
+  }
+}
 .consultation__container {
   margin: 3.3rem 0 3.3rem 0;
   width: 100%;
@@ -1004,6 +1009,12 @@ h2 {
   justify-content: center;
   position: relative;
   z-index: 5;
+}
+@media screen and (max-width: 767px) {
+  .consultation__container {
+    background: none !important;
+    height: auto !important;
+  }
 }
 .consultation__box {
   position: relative;
@@ -1017,8 +1028,15 @@ h2 {
 }
 @media screen and (max-width: 767px) {
   .consultation__box {
-    height: 58.4rem !important;
-    padding-top: 17.8rem;
+    height: auto !important;
+    padding-top: 25.6rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .consultation__box {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
 .consultation__box::before {
@@ -1094,6 +1112,14 @@ h2 {
   backdrop-filter: blur(8px);
   background: rgba(27, 31, 34, 0.5);
 }
+@media screen and (max-width: 500px) {
+  .consultation__content {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-bottom: 2.6rem;
+    padding-top: 2.3rem;
+  }
+}
 .consultation__content::after {
   pointer-events: none;
   position: absolute;
@@ -1113,9 +1139,21 @@ h2 {
   color: #fff;
   margin-bottom: 2.5rem;
 }
+@media screen and (max-width: 500px) {
+  .consultation__title {
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+}
 .consultation__title span {
   font-size: 7.5rem;
   color: #ffb033;
+}
+@media screen and (max-width: 500px) {
+  .consultation__title span {
+    font-size: 5rem;
+  }
 }
 .consultation__desc {
   font-weight: 400;
@@ -1124,4 +1162,11 @@ h2 {
   color: #fff;
   font-family: "Gilroy", sans-serif;
   margin-bottom: 2.8rem;
+}
+@media screen and (max-width: 500px) {
+  .consultation__desc {
+    font-size: 1.6rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=style.css.map */

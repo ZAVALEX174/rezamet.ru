@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: center;
 
+  @media #{$phone} {
+    margin-bottom: 10.8rem;
+  }
+
   &__container {
     margin: 3.3rem 0 3.3rem 0;
     width: 100%;
@@ -13,6 +17,11 @@
     justify-content: center;
     position: relative;
     z-index: 5;
+
+    @media #{$tablet-mini} {
+      background: none !important;
+      height: auto !important;
+    }
   }
 
   &__box {
@@ -24,23 +33,28 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    //background: linear-gradient(180deg, rgba(15, 20, 28, 0.9) 0%, rgba(15, 20, 28, 0.9) 100%);
 
     @media #{$tablet-mini} {
-      height: 58.4rem !important;
-      padding-top: 17.8rem;
+      height: auto !important;
+      padding-top: 25.6rem;
+    }
+
+    @media #{$phone} {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
     }
 
     &::before {
       position: absolute;
-      content: "";
+      content: '';
       display: block;
       max-width: 568px;
       width: 100%;
       height: 38px;
       top: -19px;
       right: 103px;
-      clip-path: polygon(0.00% 0.00%, 94.5% 0.00%, 100.00% 100.00%, 5.5% 100.00%);
+      clip-path: polygon(0% 0%, 94.5% 0%, 100% 100%, 5.5% 100%);
       background-color: rgba(248, 67, 56, 0.76);
 
       @media #{$tablet-mini} {
@@ -49,7 +63,7 @@
 
       @media #{$phone} {
         max-width: 144px;
-        clip-path: polygon(0.00% 0.00%, 80.0% 0.00%, 100.00% 100.00%, 20.0% 100.00%);
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
         right: 67px;
         top: -15px;
       }
@@ -57,14 +71,14 @@
 
     &::after {
       position: absolute;
-      content: "";
+      content: '';
       display: block;
       max-width: 521px;
       width: 100%;
       height: 67px;
       top: -33.5px;
       right: -60px;
-      clip-path: polygon(0.00% 0.00%, 90.0% 0.00%, 100.00% 100.00%, 10.0% 100.00%);
+      clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 10% 100%);
       background-color: rgba(255, 185, 0, 0.66);
 
       @media #{$notebook} {
@@ -86,7 +100,7 @@
         height: 38px;
         right: 12px;
         top: 0;
-        clip-path: polygon(0.00% 0.00%, 80.0% 0.00%, 100.00% 100.00%, 20.0% 100.00%);
+        clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 20% 100%);
       }
     }
   }
@@ -102,17 +116,25 @@
     background: rgba(27, 31, 34, 0.5);
     //overflow: hidden;
 
+    @media #{$phone} {
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      padding-bottom: 2.6rem;
+      padding-top: 2.3rem;
+    }
+
     &::after {
       pointer-events: none;
       position: absolute;
-      content: "";
+      content: '';
       width: 487px;
       height: 70px;
       display: block;
       left: 0;
       transform: translateX(calc(-100% - 35px));
       bottom: 0;
-      background: url("../../images/consultation/rezamet.svg") no-repeat center/cover;
+      background: url('../../images/consultation/rezamet.svg') no-repeat
+        center/cover;
     }
   }
 
@@ -123,9 +145,19 @@
     color: #fff;
     margin-bottom: 2.5rem;
 
+    @media #{$phone} {
+      font-size: 4.5rem;
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
     span {
       font-size: 7.5rem;
       color: #ffb033;
+
+      @media #{$phone} {
+        font-size: 5rem;
+      }
     }
   }
 
@@ -136,5 +168,11 @@
     color: #fff;
     font-family: $font-family-title;
     margin-bottom: 2.8rem;
+
+    @media #{$phone} {
+      font-size: 1.6rem;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
   }
 }
