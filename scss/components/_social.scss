@@ -4,6 +4,10 @@
     column-gap: 1.8rem;
     align-items: center;
     position: relative;
+
+    @media #{$tablet} {
+      column-gap: 1.3rem;
+    }
   }
 
   &__link {

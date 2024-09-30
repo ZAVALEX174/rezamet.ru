@@ -11,7 +11,9 @@
     align-items: flex-start;
 
     @media #{$tablet} {
+      padding-top: 0.5rem;
       display: block;
+      padding-bottom: 1.5rem;
     }
   }
 
@@ -23,6 +25,62 @@
     @media #{$tablet} {
       flex-wrap: wrap;
     }
+
+    &::before {
+      position: absolute;
+      content: none;
+      width: 640px;
+      height: 43px;
+      display: block;
+      top: -5px;
+      left: -15px;
+      clip-path: polygon(6% 0.2%, 100% 0%, 94% 100%, 0% 100%);
+      background-color: rgba(248, 67, 56, 0.76);
+      pointer-events: none;
+      z-index: 0;
+
+      @media #{$tablet} {
+        content: '';
+      }
+
+      @media #{$tablet-mini} {
+        width: 500px;
+      }
+
+      @media #{$phone} {
+        width: 361px;
+        clip-path: polygon(0% 0%, 100% 0%, 94% 100%, 0% 100%);
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      content: none;
+      width: 587px;
+      height: 75px;
+      display: block;
+      background-color: rgba(255, 185, 0, 0.66);
+      clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+      z-index: 1;
+
+      @media #{$tablet} {
+        content: "";
+        width: 487px;
+      }
+
+      @media #{$tablet-mini} {
+        width: 400px;
+        top: -37px
+      }
+
+      @media #{$phone} {
+        width: 297px;
+        height: 65px;
+        top: -27px
+      }
+    }
   }
 
   &__logo {
@@ -32,7 +90,7 @@
     margin-bottom: 1.8rem;
 
     @media #{$notebook_s} {
-      margin-right: 5rem;
+      margin-right: 2rem;
     }
 
     @media #{$tablet} {
@@ -42,6 +100,10 @@
 
   &__address {
     margin-right: 6rem;
+
+    @media #{$notebook_s} {
+      margin-right: 3rem;
+    }
 
     @media #{$tablet} {
       display: block;
@@ -54,7 +116,7 @@
 
     &-text {
       font-weight: 600;
-      font-size: 1.4rem;
+      font-size: 14px;
       color: #000;
       font-family: $font-family-title;
     }
@@ -74,7 +136,7 @@
     &-mail {
       display: block;
       font-weight: 600;
-      font-size: 1.4rem;
+      font-size: 14px;
       color: #000;
       font-family: $font-family-title;
 
@@ -87,6 +149,10 @@
   &__social {
     // color: #596775;
     margin-right: 4.1rem;
+
+    @media #{$notebook_s} {
+      margin-right: 3rem;
+    }
 
     @media #{$tablet} {
       margin-right: 0;
@@ -105,7 +171,7 @@
 
     @media #{$tablet} {
       position: absolute;
-      top: 110px;
+      top: 120px;
       z-index: 150;
     }
   }
@@ -130,7 +196,8 @@
       height: 75px;
       display: block;
       background-color: rgba(255, 185, 0, 0.66);
-      clip-path: polygon(0.00% 0.00%, 100.00% 0.00%, 90.00% 100%, 0.00% 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+      z-index: 1;
 
       @media #{$laptop} {
         width: 487px;
@@ -138,11 +205,11 @@
 
       @media #{$notebook_s} {
         width: 350px;
-        clip-path: polygon(0.00% 0.00%, 100.00% 0.00%, 85.00% 100%, 0.00% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
       }
 
       @media #{$tablet} {
-        top: -126px;
+        content: none;
       }
     }
   }
@@ -154,21 +221,20 @@
     align-items: flex-start;
 
     &::before {
-      position: relative;
+      position: absolute;
       content: '';
       width: 640px;
       height: 43px;
       display: block;
       top: 0;
       left: -15px;
-      clip-path: polygon(6.00% 0.20%, 100.00% 0.00%, 94.00% 100%, 0.00% 100%);
+      clip-path: polygon(6% 0.2%, 100% 0%, 94% 100%, 0% 100%);
       background-color: rgba(248, 67, 56, 0.76);
       pointer-events: none;
       z-index: 0;
 
       @media #{$tablet} {
-        top: -110px;
-        flex-wrap: nowrap;
+        content: none;
       }
     }
   }
