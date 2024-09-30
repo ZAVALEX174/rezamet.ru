@@ -1,0 +1,31 @@
+.infra {
+  width: 100%;
+  min-height: 36.7rem;
+  position: relative;
+
+  @media #{$phone} {
+    min-height: 32.2rem;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 82px;
+    display: block;
+    background: url("../../images/maps/map_logo.png") no-repeat;
+    z-index: 10;
+  }
+
+  &__box {
+    width: 100%;
+    height: 36.7rem;
+
+    @media #{$phone} {
+      height: 32.2rem;
+    }
+  }
+}
