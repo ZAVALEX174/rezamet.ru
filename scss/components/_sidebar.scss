@@ -1,0 +1,55 @@
+.sidebar {
+  position: absolute;
+  right: 28px;
+  top: 810px;
+  //overflow: visible;
+  //margin-bottom: 50px;
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 37px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 33.5px;
+    padding-bottom: 33.5px;
+  }
+
+  &::before {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: -18px;
+    display: block;
+    content: '';
+    background-color: rgba(224, 230, 236, 0.6);;
+    width: 52px;
+    height: 138px;
+    clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+  }
+
+  &::after {
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    content: '';
+    width: 52px;
+    height: 94px;
+    bottom: -10px;
+    left: -28px;
+    background-color: rgba(202, 209, 216, 0.5);
+    clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
+  }
+
+  &__callback {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__btn-up {
+    position: relative;
+    z-index: 10;
+  }
+}
