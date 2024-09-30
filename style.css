@@ -81,7 +81,7 @@ body {
   min-width: 320px;
   font-weight: 400;
   background-color: #f3f7f9;
-  min-height: 100vh;
+  height: 100vh;
   font-family: "Bebas Neue", sans-serif, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -487,6 +487,7 @@ h2 {
 .hero-slider {
   position: relative;
   width: 100%;
+  margin-top: 0;
   position: relative;
   margin-bottom: 7.7rem;
 }
@@ -1500,9 +1501,16 @@ h2 {
 }
 
 .sidebar {
-  position: absolute;
+  position: fixed;
   right: 28px;
-  top: 810px;
+  top: 80%;
+  display: none;
+  z-index: 500;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar {
+    display: none;
+  }
 }
 .sidebar__wrapper {
   width: 100%;
@@ -1534,7 +1542,7 @@ h2 {
   content: "";
   width: 52px;
   height: 94px;
-  bottom: -10px;
+  bottom: -8px;
   left: -28px;
   background-color: rgba(202, 209, 216, 0.5);
   clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
@@ -1542,8 +1550,21 @@ h2 {
 .sidebar__callback {
   position: relative;
   z-index: 10;
+  cursor: pointer;
 }
 .sidebar__btn-up {
   position: relative;
   z-index: 10;
-}/*# sourceMappingURL=style.css.map */
+  cursor: pointer;
+}
+
+.sidebar__show {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .sidebar__show {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

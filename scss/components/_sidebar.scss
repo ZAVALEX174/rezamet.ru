@@ -1,9 +1,13 @@
 .sidebar {
-  position: absolute;
+  position: fixed;
   right: 28px;
-  top: 810px;
-  //overflow: visible;
-  //margin-bottom: 50px;
+  top: 80%;
+  display: none;
+  z-index: 500;
+
+  @media #{$laptop_s} {
+    display: none;
+  }
 
   &__wrapper {
     width: 100%;
@@ -37,7 +41,7 @@
     content: '';
     width: 52px;
     height: 94px;
-    bottom: -10px;
+    bottom: -8px;
     left: -28px;
     background-color: rgba(202, 209, 216, 0.5);
     clip-path: polygon(0 18%, 100% 0%, 100% 82%, 0% 100%);
@@ -46,10 +50,20 @@
   &__callback {
     position: relative;
     z-index: 10;
+    cursor: pointer;
   }
 
   &__btn-up {
     position: relative;
     z-index: 10;
+    cursor: pointer;
+  }
+}
+
+.sidebar__show {
+  display: block;
+
+  @media #{$laptop_s} {
+    display: none;
   }
 }
