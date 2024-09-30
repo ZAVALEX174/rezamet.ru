@@ -8,6 +8,9 @@
 
   &__link {
     transition: all 0.3s linear;
+
+    &_grey {
+    }
   }
 
   &__link:hover svg path {
@@ -17,5 +20,22 @@
 
   &__list_burger {
     column-gap: 2.2rem;
+  }
+
+  // &__list_grey {
+  // }
+
+  // &__item_grey {
+  // }
+
+  // &__link_grey {
+  // }
+
+  &__svg_gray path {
+    fill: #596775;
+
+    :hover {
+      opacity: 1;
+    }
   }
 }

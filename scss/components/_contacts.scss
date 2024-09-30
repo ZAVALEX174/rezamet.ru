@@ -25,6 +25,18 @@
     }
   }
 
+  &__number-footer &__number-link-footer > span {
+    @media #{$tablet} {
+      display: inline-flex;
+    }
+  }
+
+  &__number-footer &__number-link-footer > svg {
+    @media #{$tablet} {
+      margin-right: 1rem;
+    }
+  }
+
   &__callback {
     &-link {
       font-family: $font-family-title;
@@ -35,6 +47,12 @@
       @media #{$tablet} {
         display: none;
       }
+    }
+  }
+
+  &__callback-link-footer {
+    @media #{$tablet} {
+      display: inline-flex;
     }
   }
 
